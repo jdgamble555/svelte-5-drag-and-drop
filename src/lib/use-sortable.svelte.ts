@@ -19,6 +19,7 @@ export function reorder<T>(
 	evt: Sortable.SortableEvent
 ): $state.Snapshot<T>[] {
 
+	// should have no effect on stores or regular array
 	const workArray = $state.snapshot(array);
 
 	// get changes
